@@ -10,10 +10,11 @@ public class Pres1 {
         /**
          * DI PPAR STATIC INSTANCIATION
          */
-        DaoImpl dao=new DaoImpl();
+       /*DaoImpl dao=new DaoImpl();
         BusinessImpl business=new BusinessImpl();
         business.setDao(dao);
         System.out.println(business.calculation());
+        */
 
     }
 }
