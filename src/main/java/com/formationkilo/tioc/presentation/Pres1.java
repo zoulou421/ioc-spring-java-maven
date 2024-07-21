@@ -7,6 +7,9 @@ import com.formationkilo.tioc.dao.IDao;
 public class Pres1 {
     public static void main(String [] v){
 
+        /**
+         * DI PPAR STATIC INSTANCIATION
+         */
         DaoImpl dao=new DaoImpl();
         BusinessImpl business=new BusinessImpl();
         business.setDao(dao);
