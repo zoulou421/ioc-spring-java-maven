@@ -20,5 +20,10 @@ public class BusinessImpl implements IBusiness{
     //DI BY SETTER
     public void setDao(IDao dao) {
         this.dao = dao;
+        System.out.println("DI dao via setter... ");
+    }
+
+    public void init(){
+        System.out.println("BusinessImpl Instanciation... ");
     }
 }

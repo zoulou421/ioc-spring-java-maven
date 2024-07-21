@@ -12,7 +12,7 @@ public class Pres2 {
 
         ApplicationContext  ctx=
                 new ClassPathXmlApplicationContext("config.xml");
-        System.out.println("Context = "+ctx);
+
 
     }
 }
