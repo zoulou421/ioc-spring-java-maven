@@ -24,6 +24,15 @@ public class BusinessImpl implements IBusiness{
     }
 
     public void init(){
-        System.out.println("BusinessImpl Instanciation... ");
+        System.out.println("BusinessImpl Initialisation ");
+    }
+
+    public BusinessImpl() {
+        System.out.println("Instanciation of BusinessImpl ");
+    }
+
+    public BusinessImpl(IDao dao) {
+        this.dao = dao;
+        System.out.println("DI with constructor with argument ");
     }
 }

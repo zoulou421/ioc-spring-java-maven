@@ -11,6 +11,10 @@ public class DaoImpl implements IDao{
     }
 
   public void init(){
-        System.out.println("DaoImpl Instanciation... ");
+        System.out.println("DaoImpl Initialisation... ");
   }
+
+    public DaoImpl() {
+        System.out.println("Instanciation of DaoImpl ");
+    }
 }
