@@ -8,7 +8,8 @@ public class Pres {
     public static void main(String[] args) {
         ApplicationContext ctx=
                 new AnnotationConfigApplicationContext("dao","metier");
-        IMetier metier=ctx.getBean(IMetier.class);
-        System.out.println(metier.calculation());
+        //IMetier metier=ctx.getBean(IMetier.class);
+        IMetier metier= (IMetier) ctx.getBean("metier");
+        System.out.println("Repo and service: "+metier.calculation());
     }
 }
